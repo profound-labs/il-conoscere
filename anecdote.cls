@@ -322,7 +322,7 @@
 % memoir's more allowing penalties
 \midsloppy
 
-\renewcommand\britishhyphenmins{{3}{3}}
+\renewcommand\italianhyphenmins{{3}{3}}
 
 \hyphenpenalty=700
 \exhyphenpenalty=50
