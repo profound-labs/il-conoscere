@@ -1,0 +1,83 @@
+\documentclass[
+  final,
+  babelLanguage=british,
+  %desktopVersion,
+  %showtrims,
+  %overleaf,
+]{anecdote}
+
+%\graphicspath{{./assets/photos/300dpi/}}
+\graphicspath{{./assets/photos/92dpi/}}
+
+% Page size: 6x9 inch
+% Body text: 10.5 / 15 pt
+
+\usepackage{local}
+
+%% Details of the book
+%% ===================
+
+\title{Il Conoscere è Adesso}
+\subtitle{}
+\author{Ajahn Sumedho}
+\publisher{Edizioni Santacittarama}
+\date{2017-08-21}
+\editionInfo{\textit{First edition}, printed in Malaysia, 2018}% TODO update edition info
+\ISBN{978-88-85706-03-3}
+
+% === Metadata ===
+
+\pdfinfo{%
+  /Title (\thetitle)%
+  /Author (\theauthor)
+  /Subject (meditation)
+  /Keywords (buddhism, Dhamma, meditation)
+  /GTS_PDFXVersion (PDF/X-1:2001)%
+  /GTS_PDFXConformance (PDF/X-1a:2001)%
+}
+
+%% === Load further packages ===
+
+%% === Hyphenation exceptions and corrections ===
+
+\hyphenation{London}
+
+\begin{document}
+
+\frontmatter
+
+\ifdesktopversion
+\desktopCover{\includegraphics[height=\paperheight]{./desktop-cover.png}}
+\fi
+
+\input{./manuscript/tex/titlepage.tex}
+
+\input{./manuscript/tex/copyright.tex}
+
+\input{./manuscript/tex/dedication.tex}
+
+\cleartorecto
+\tableofcontents*
+
+\input{./manuscript/tex/foreword.tex}
+
+\input{./manuscript/tex/preface.tex}
+
+% Page 1 is the first page of the first chapter.
+\mainmatter
+
+\input{./manuscript/tex/01-chapter-one.tex}
+\input{./manuscript/tex/02-chapter-two.tex}
+
+\backmatter
+
+\input{./manuscript/tex/glossary.tex}
+
+\input{./manuscript/tex/copyright-details.tex}
+
+% Add an extra page to complete the last sheet.
+\ifodd\thepage
+\newpage\thispagestyle{empty}\mbox{}
+\fi
+
+\end{document}
