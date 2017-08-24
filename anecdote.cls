@@ -210,30 +210,18 @@
 
 % Some default font sizes, use \renewcommand to adjust
 
-\newcommand{\chapterNameSize}
-  {\@setfontsize\chapterNameSize{22}{24}}
-\newcommand{\chapterNumberSize}
-  {\@setfontsize\chapterNumberSize{22}{24}}
-\newcommand{\chapterTitleSize}
-  {\@setfontsize\chapterTitleSize{13}{16.5}}
-\newcommand{\chapterTitleFootnoteSize}
-  {\@setfontsize\chapterTitleFootnoteSize{16}{30}}
-\newcommand{\chapterAuthorSize}
-  {\@setfontsize\chapterAuthorSize{12}{14}}
-\newcommand{\chapterNoteSize}
-  {\@setfontsize\chapterNoteSize{13}{15}}
-\newcommand{\footerSize}
-  {\@setfontsize\footerSize{10.5}{10.5}}
-\newcommand{\headerSize}
-  {\@setfontsize\headerSize{10}{10}}
-%\newcommand{\pageNumSize}
-%  {\@setfontsize\pageNumSize{10}{12}}
+\newcommand{\chapterNameSize}{\@setfontsize          \chapterNameSize          {22}{24}}
+\newcommand{\chapterNumberSize}{\@setfontsize        \chapterNumberSize        {22}{24}}
+\newcommand{\chapterTitleSize}{\@setfontsize         \chapterTitleSize         {13}{16.5}}
+\newcommand{\chapterTitleFootnoteSize}{\@setfontsize \chapterTitleFootnoteSize {16}{30}}
+\newcommand{\chapterAuthorSize}{\@setfontsize        \chapterAuthorSize        {12}{14}}
+\newcommand{\chapterNoteSize}{\@setfontsize          \chapterNoteSize          {13}{15}}
+\newcommand{\footerSize}{\@setfontsize               \footerSize               {10.5}{10.5}}
+\newcommand{\headerSize}{\@setfontsize               \headerSize               {10}{10}}
 
-\newcommand{\smaller}
-  {\@setfontsize\smaller{9}{11}}
+\newcommand{\smaller}{\@setfontsize\smaller{9}{11}}
 
-\newcommand{\copyrightsize}
-  {\@setfontsize\copyrightsize{9}{11}}
+\newcommand{\copyrightsize}{\@setfontsize\copyrightsize{9}{11}}
 
 % foreign language wrappers
 
@@ -268,14 +256,14 @@
   filecolor=textbody,
   urlcolor=textbody,
   % Metadata
-  pdftitle={Stillness Flowing},
-  pdfauthor={Ajahn Jayasaro},
-  pdfcopyright={Copyright (C) 2017, Panyaprateep Foundation},
-  pdfsubject={The Life and Teachings of Ajahn Chah},
-  pdfkeywords={buddhism, dhamma, biography, ajahn chah, luang por chah},
+  pdftitle={Il Conoscere è Adesso},
+  pdfauthor={Ajahn Sumedho},
+  pdfcopyright={Copyright (C) 2018, Associazione Santacittarama},
+  pdfsubject={},
+  pdfkeywords={buddhism, dhamma, ajahn sumedho},
   pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/4.0/},
-  pdfcontacturl={http://jayasaro.panyaprateep.org},
-  pdflang={en},
+  pdfcontacturl={http://fsbooks.org},
+  pdflang={it},
   % Behaviour
   bookmarksopen=true,
   bookmarksopenlevel=3,
@@ -294,14 +282,14 @@
   filecolor=textbody,
   urlcolor=textbody,
   % Metadata
-  pdftitle={Stillness Flowing},
-  pdfauthor={Ajahn Jayasaro},
-  pdfcopyright={Copyright (C) 2017, Panyaprateep Foundation},
-  pdfsubject={The Life and Teachings of Ajahn Chah},
-  pdfkeywords={buddhism, dhamma, biography, ajahn chah, luang por chah},
+  pdftitle={Il Conoscere è Adesso},
+  pdfauthor={Ajahn Sumedho},
+  pdfcopyright={Copyright (C) 2018, Associazione Santacittarama},
+  pdfsubject={},
+  pdfkeywords={buddhism, dhamma, ajahn sumedho},
   pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/4.0/},
-  pdfcontacturl={http://jayasaro.panyaprateep.org},
-  pdflang={en},
+  pdfcontacturl={http://fsbooks.org},
+  pdflang={it},
   % Behaviour
   bookmarksopen=true,
   bookmarksopenlevel=3,
@@ -1485,7 +1473,7 @@ philo-sophical munindo amaravati thai-land}
 %\setsechook{\setsecnumformat{\thesection.\space}}
 
 \newcommand\sectionFmt[1]{%
-  \sectionFont\fontsize{11.5}{14}\selectfont%
+  \sectionFont\fontsize{11.5}{18}\selectfont%
   \color{section}%
   \centering
   \textls{\MakeUppercase{#1}}%
@@ -1547,13 +1535,13 @@ philo-sophical munindo amaravati thai-land}
 \setlength{\vindent}{\vgap}
 \setlength{\vleftmargin}{2em}
 
-\setlength{\parskip}{8pt}
-\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{17pt}
 
 % === setup page layout ===
 
-\setlength{\BOOK@paperHeight}{9in}
-\setlength{\BOOK@paperWidth}{6in}
+\setlength{\BOOK@paperHeight}{8in}
+\setlength{\BOOK@paperWidth}{5.25in}
 
 \ifshowtrims
   \stockaiv% use A4 paper size to show trims
@@ -1570,16 +1558,13 @@ philo-sophical munindo amaravati thai-land}
   \settrims{0pt}{0pt}
 \fi
 
-% Text block for 10.5 / 15pt:
-%%\settypeblocksize{521pt}{*}{0.599}% 1/1.667, 3:5, major 6th (183.79mm x 110mm)
-%\settypeblocksize{34\baselineskip + \topskip}{*}{0.599}% 1/1.667, 3:5, major 6th
-%\setlrmargins{*}{20mm}{*}% 22.71669mm and 19.99976mm
-
-\settypeblocksize{190mm}{110mm}{*}
+\settypeblocksize{150mm}{90mm}{*}
 \setlrmargins{*}{20mm}{*}
 
-\setulmargins{42pt}{*}{*}% Based on Tall Pentagon, 1.701
-\setlength{\footskip}{30pt}
+\setulmargins{28mm}{*}{*}
+\setheaderspaces{*}{13mm}{*}
+
+\setlength{\footskip}{35pt}
 
 % Fixes these warnings:
 %
