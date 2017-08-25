@@ -1,0 +1,56 @@
+\documentclass[
+  pageHeight = 8in,
+  pageWidth = 5.25in,
+  showtrims,
+  onepage,
+]{anecdote-cover}
+
+\usepackage{cover-local}
+
+\makeatletter
+
+\SetCoverCoffins
+
+\NewCoffin\Photo
+\NewCoffin\Text
+
+\SetHorizontalCoffin\Photo{%
+  \includegraphics[width={\BOOK@paperWidth + 8mm},keepaspectratio]{cover-image.jpg}%
+}
+
+\SetHorizontalCoffin\Text{%
+\begin{minipage}{\linewidth}%
+\centering
+
+{\fontsize{32}{32}\selectfont
+\firaSansLightFont
+\color[gray]{0.4}%
+IL CONOSCERE È ADESSO%
+}
+
+\vspace*{4mm}
+
+{\color[gray]{0.6}%
+Buddha, Dhamma, Saṅgha | Ānāpānasati | Felicità, Infelicità e Nibbāna}
+
+\vspace*{12mm}
+
+{\fontsize{13.5}{13.5}\selectfont
+\firaSansMediumFont
+\color[gray]{0.5}%
+AJAHN SUMEDHO}
+
+\end{minipage}}
+
+\JoinCoffins*\coverPage[hc,t]\Photo[hc,t](0pt,3mm)
+\JoinCoffins*\coverPage[hc,b]\Text[hc,t](0pt,47mm)
+
+\JoinCoverCoffins
+
+\makeatother
+
+\begin{document}
+
+\CoverPage
+
+\end{document}

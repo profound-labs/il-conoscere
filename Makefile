@@ -10,6 +10,12 @@ all: document
 document:
 	$(LATEX) $(LATEX_OPTS) $(FILE).tex
 
+cover-front:
+	$(LATEX) $(LATEX_OPTS) cover-front.tex
+
+cover-back:
+	$(LATEX) $(LATEX_OPTS) cover-back.tex
+
 html:
 	asciidoctor -D output stillness-flowing.adoc
 

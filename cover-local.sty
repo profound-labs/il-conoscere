@@ -1,0 +1,17 @@
+\ProvidesPackage{cover-local}
+
+\usepackage{graphicx}
+\graphicspath{{./assets/images/}}
+
+\usepackage{fontspec}
+\defaultfontfeatures{ Ligatures={TeX}, Path = {./assets/fonts/}, }
+\setmainfont[
+    ItalicFont = FiraSans-Italic.otf,
+]{FiraSans-Regular.otf}
+
+\newfontfamily\firaSansLightFont[
+    ItalicFont = FiraSans-LightItalic.otf,
+]{FiraSans-Light.otf}
+
+\newfontfamily\firaSansMediumFont{FiraSans-Medium.otf}
+
