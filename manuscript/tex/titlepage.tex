@@ -1,24 +1,33 @@
 \cleartorecto
 \thispagestyle{empty}
-\vspace*{5em}
 
-{\centering
+{\raggedleft
+\firaSansLightFont
+\color[gray]{0.35}%
 
-\settowidth{\titleLength}{%
-  {\Large\chapterTitleFont\scshape\MakeLowercase{\thetitle}}%
-}
+\vspace*{4\baselineskip}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
 
-{\Large\chapterTitleFont\scshape\MakeLowercase{\thetitle}}\\[0.3\baselineskip]
-\setlength{\xheight}{\heightof{X}}
-\raisebox{0.5\xheight}{\color[gray]{0.4}\rule{\titleLength}{0.25pt}}\\[0.3\baselineskip]
-{\itshape
-\thesubtitle}
+{\fontsize{22}{25}\selectfont
+\color[gray]{0.3}%
+\MakeUppercase{\thetitle}}
+
+\vspace*{0.9\baselineskip}
+
+{\fontsize{12}{15}\selectfont
+by \theauthor}
 
 \vfill
 
-\theauthor
+Published for free distribution by\\
+ARUNA PUBLICATIONS
 
-\vspace*{5em}
+This book is available for free download at
+
+\vspace*{-0.8\baselineskip}%
+{\fontsize{10}{12}\selectfont
+www.fsbooks.org}%
 
 }
 

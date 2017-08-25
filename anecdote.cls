@@ -185,6 +185,8 @@
   BoldItalicFont = GenBkBasBI.ttf,
 ]{GentiumPlus-R.ttf}
 
+\newfontfamily\firaSansLightFont{FiraSans-Light.otf}
+
 % header and footer
 
 \newcommand\headerFont\crimsonRomanFont

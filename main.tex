@@ -1,13 +1,12 @@
 \documentclass[
   final,
   babelLanguage=italian,
-  desktopVersion,
+  %desktopVersion,
   %showtrims,
   %overleaf,
 ]{anecdote}
 
-%\graphicspath{{./assets/photos/300dpi/}}
-\graphicspath{{./assets/photos/92dpi/}}
+\graphicspath{{./assets/images/}}
 
 % Page size: 6x9 inch
 % Body text: 10.5 / 15 pt
@@ -22,7 +21,7 @@
 \author{Ajahn Sumedho}
 \publisher{Edizioni Santacittarama}
 \date{2017-08-21}
-\editionInfo{\textit{First edition}, printed in Malaysia, 2018}% TODO update edition info
+\editionInfo{\emph{Prima edizione}, 5.000 copie, stampate in Malesia, 2018}
 \ISBN{978-88-85706-03-3}
 
 % === Metadata ===
@@ -50,6 +49,15 @@
 \desktopCover{\includegraphics[height=\paperheight]{./desktop-cover.png}}
 \fi
 
+% FIXME: convert to CMYK jpg
+
+\cleartoverso
+\thispagestyle{empty}
+\mbox{}
+\AddToShipoutPicture*{\put(\LenToUnit{0.85in},\LenToUnit{5.5in}){%
+    \includegraphics[width=30mm,keepaspectratio]{spearshape_by_Scott_edited.png}%
+}}
+
 \input{./manuscript/tex/titlepage.tex}
 
 \input{./manuscript/tex/copyright.tex}
@@ -67,6 +75,8 @@
 \input{./manuscript/tex/03-felicita.tex}
 
 \backmatter
+
+\input{./manuscript/tex/gift-of-dhamma.tex}
 
 \input{./manuscript/tex/copyright-details.tex}
 
