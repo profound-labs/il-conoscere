@@ -3,7 +3,7 @@ Il Conoscere è Adesso
 
 By Ajahn Sumedho
 
-Paperback status: **IN PROGRESS**  
+Paperback status: **COMPLETED**  
 Ebook status: **N/A**
 
 *First edition*
@@ -20,7 +20,7 @@ See the final files in the `publish/final/` folder.
 
 Based on [prophecy-template].
 
-Github: <https://github.com/profound-labs/prophecy-template>
+Github: <https://github.com/profound-labs/il-conoscere>
 
 Produced with [LaTeX], [Pandoc] and [Asciidoctor].
 
