@@ -16,7 +16,7 @@ ISBN for paperback: `978-88-85706-03-3`
 
 ISBN for ebooks: `978-88-85706-04-0`
 
-See the final files in the `publish/final/` folder.
+See the final files in the `publish/` folder.
 
 Based on [prophecy-template].
 
