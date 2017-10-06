@@ -4,7 +4,7 @@ Il Conoscere è Adesso
 By Ajahn Sumedho
 
 Paperback status: **COMPLETED**  
-Ebook status: **N/A**
+Ebook status: **COMPLETED**
 
 *First edition*
 
