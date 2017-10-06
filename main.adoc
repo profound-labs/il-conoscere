@@ -1,35 +1,30 @@
 = Il Conoscere è Adesso
-The Author
-v1.0, 2017-08-19
-:booktitle: Book Title
-:revdate: 2017-08-19
-:description: Book Subtitle
-:doctype: book
+:booktitle: {doctitle}
+:author: Ajahn Sumedho
 :creator: {author}
-:lang: en
-//:keywords: subject, topic
+:version: v1.0
+:revdate: 2017-10-06
+:doctype: book
+:lang: it
+:keywords: Ajahn Sumedho, Dhamma, Buddhism, RELIGION / Buddhism / Theravada
 :copyright: CC-BY-NC-ND 4.0
-:isbn: 000-0-00000-000-0
-:imagesdir: assets/photos/ebook-92dpi-sRGB
+:isbn: 978-88-85706-04-0
+:identifier: isbn:{isbn}
+:source: https://forestsangha.org
+:imagesdir: assets/photos/92dpi-ebook-sRGB
 :includes: manuscript/asciidoc
-:front-cover-image: image:desktop-cover.png[Front Cover,800,1200]
+:front-cover-image: image:desktop-cover.jpg[Front Cover,800,1200]
 :toc: left
-:toc-title: Contents
+:toc-title: Indice
 :toclevels: 0
-
-include::{includes}/dedication.adoc[]
-
-include::{includes}/foreword.adoc[]
-
-include::{includes}/preface.adoc[]
 
 include::{includes}/titlepage.adoc[]
 
-include::{includes}/01-chapter-one.adoc[]
+include::{includes}/01-buddha-dhamma-sangha.adoc[]
 
-include::{includes}/02-chapter-two.adoc[]
+include::{includes}/02-anapanasati.adoc[]
 
-include::{includes}/glossary.adoc[]
+include::{includes}/03-felicita.adoc[]
 
 include::{includes}/copyright.adoc[]
 

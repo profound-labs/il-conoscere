@@ -6,7 +6,7 @@
 # 3. zip back to EPUB
 
 MAIN_ADOC="main.adoc"
-NAME="prophecy"
+NAME="il-conoscere"
 
 # no trailing slash
 OUT_DIR=output
@@ -16,6 +16,17 @@ EPUB_NAME="$NAME-custom.epub"
 nav_guide_path="./manuscript/xml/nav-guide.xhtml"
 
 build_dir="$OUT_DIR/$NAME"
+
+# Remove output files if they exist, to make sure they will be new. For example
+# zip will append to existing epub files instead of overwriting them.
+
+for i in "$OUT_DIR/$NAME.epub" "$OUT_DIR/$EPUB_NAME"
+do
+    if [ -e "$i" ]; then
+        echo "Removing: $i"
+        rm "$i"
+    fi
+done
 
 # === 1. Generate an EPUB with asciidoctor-epub3 ===
 
