@@ -743,14 +743,12 @@ p.lead {
   line-height: 1.75;
 }
 hr.thematicbreak {
-  display: none;
+  display: inline-block;
+  margin: 2em auto;
+  width: 80%;
 }
 hr.thematicbreak + p {
-  margin-top: 1.5em;
-}
-/* TODO finish layout of first-letter */
-hr.thematicbreak + p::first-letter {
-  font-size: 200%;
+  margin-top: 1em;
 }
 p.stack > strong.head,
 p.stack-head > strong.head {
@@ -1273,11 +1271,14 @@ section#appendix-thai .table em {
   font-style: normal;
   font-weight: normal;
 }
-section#stillness-flowing .subtitle {
+section#titlepage .subtitle {
   margin: 0;
 }
-section#stillness-flowing > header h1 {
+section#titlepage > header h1 {
   text-align: center;
+}
+section#copyright figure.image div.content {
+  text-align: left;
 }
 #titlepage-description {
   text-align: center;
@@ -1337,4 +1338,7 @@ figure.image img.sectionbreak {
 }
 figure.image img.quotebreak {
   margin: 0 auto;
+}
+.blockquote.quote > blockquote em {
+  font-style: normal;
 }

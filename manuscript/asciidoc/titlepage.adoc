@@ -1,8 +1,13 @@
 [#titlepage]
 = {booktitle}
 
-[#titlepage-description]
-== {description} 
-
 [role=titlepage-author]
 {author}
+
+<<<
+
+[quote, Ajahn Sumedho]
+____
+"`Il passato è un ricordo. +
+Il futuro è l'ignoto. +
+Il conoscere è adesso.`"
