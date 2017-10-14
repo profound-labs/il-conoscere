@@ -6,7 +6,7 @@
 :revdate: 2017-10-06
 :doctype: book
 :lang: it
-:publisher: Edizioni Santacittarama
+:publisher-name: Edizioni Santacittarama
 :publisher-website: www.santacittarama.org
 :source: https://forestsangha.org
 :keywords: Ajahn Sumedho, Dhamma, Buddhism, RELIGION / Buddhism / Theravada
